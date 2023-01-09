@@ -1,0 +1,18 @@
+
+login into the private vpc thru public vpc  in same region
+
+ssh  -i ec2-user@private ip   ut it will not allow due to permission issue
+change permission    sudo chmod 400  test.pem      
+then ssh -i "test.pem" ec20user@private ipA VPC peering connection helps you to facilitate the transfer of data. 
+
+
+For example, if you have more than one AWS account, you can peer the VPCs across those accounts to create a file sharing network.
+ You can also use a VPC peering connection to allow other VPCs to access resources you have in one of your VPCs.
+
+
+   Git stash vs. commit
+The git commit and git stash commands are similar in that both take a snapshot of modified files in the git working tree and store that snapshot for future reference. The key differences between the two are as follows:
+
+A commit is part of the public git history; a stash is stored locally.
+A commit creates a new save point on a branch; a stash reverts to a previous save point.
+A new commit leaves files in the working tree unchanged; a stash
